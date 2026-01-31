@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestras Apps</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            color: #fff;
+            padding: 40px 20px;
+        }
+        .container { max-width: 600px; margin: 0 auto; }
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #ff6b6b, #feca57);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .subtitle {
+            text-align: center;
+            color: #888;
+            margin-bottom: 40px;
+        }
+        .section-title {
+            font-size: 0.9rem;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 30px 0 15px;
+            padding-left: 5px;
+        }
+        .app-list { list-style: none; }
+        .app-item {
+            background: rgba(255,255,255,0.05);
+            border-radius: 12px;
+            margin-bottom: 12px;
+            overflow: hidden;
+            transition: transform 0.2s, background 0.2s;
+        }
+        .app-item:hover {
+            transform: translateX(5px);
+            background: rgba(255,255,255,0.1);
+        }
+        .app-link {
+            display: flex;
+            align-items: center;
+            padding: 16px 20px;
+            text-decoration: none;
+            color: #fff;
+        }
+        .app-icon {
+            font-size: 1.5rem;
+            margin-right: 15px;
+            width: 40px;
+            text-align: center;
+        }
+        .app-info { flex: 1; }
+        .app-name { font-weight: 600; font-size: 1.1rem; }
+        .app-desc { color: #888; font-size: 0.85rem; margin-top: 2px; }
+        .app-arrow { color: #888; font-size: 1.2rem; }
+        .badge {
+            background: #ff6b6b;
+            color: #fff;
+            font-size: 0.65rem;
+            padding: 2px 6px;
+            border-radius: 4px;
+            margin-left: 8px;
+            text-transform: uppercase;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #555;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Nuestras Apps</h1>
+        <p class="subtitle">Apps y herramientas que estamos construyendo</p>
+
+        <div class="section-title">📱 Apps Móviles</div>
+        <ul class="app-list">
+            <li class="app-item">
+                <a href="https://nico-sanchez.github.io/nico-apps-anotador/" class="app-link" target="_blank">
+                    <span class="app-icon">🎴</span>
+                    <div class="app-info">
+                        <div class="app-name">Anotador de Juegos</div>
+                        <div class="app-desc">Truco, Chinchón, Generala, Escoba, UNO y más</div>
+                    </div>
+                    <span class="app-arrow">→</span>
+                </a>
+            </li>
+            <li class="app-item">
+                <a href="https://nico-sanchez.github.io/nico-apps-pdf-tools/" class="app-link" target="_blank">
+                    <span class="app-icon">📄</span>
+                    <div class="app-info">
+                        <div class="app-name">PDF Tools</div>
+                        <div class="app-desc">Unir, dividir, comprimir PDFs</div>
+                    </div>
+                    <span class="app-arrow">→</span>
+                </a>
+            </li>
+            <li class="app-item">
+                <a href="https://nico-sanchez.github.io/nico-apps-galaxy-td/" class="app-link" target="_blank">
+                    <span class="app-icon">🚀</span>
+                    <div class="app-info">
+                        <div class="app-name">Galaxy TD</div>
+                        <div class="app-desc">Tower Defense espacial</div>
+                    </div>
+                    <span class="app-arrow">→</span>
+                </a>
+            </li>
+            <li class="app-item">
+                <a href="https://nico-sanchez.github.io/nico-apps-promiedos/" class="app-link" target="_blank">
+                    <span class="app-icon">⚽</span>
+                    <div class="app-info">
+                        <div class="app-name">Promiedos</div>
+                        <div class="app-desc">Promedios de fútbol argentino</div>
+                    </div>
+                    <span class="app-arrow">→</span>
+                </a>
+            </li>
+            <li class="app-item">
+                <a href="https://nico-sanchez.github.io/nico-apps-dating/" class="app-link" target="_blank">
+                    <span class="app-icon">💕</span>
+                    <div class="app-info">
+                        <div class="app-name">Spark</div>
+                        <div class="app-desc">Dating app</div>
+                    </div>
+                    <span class="app-arrow">→</span>
+                </a>
+            </li>
+        </ul>
+
+        <div class="section-title">🌐 Web Apps (Próximamente)</div>
+        <ul class="app-list">
+            <li class="app-item">
+                <a href="#" class="app-link">
+                    <span class="app-icon">🔗</span>
+                    <div class="app-info">
+                        <div class="app-name">Link in Bio <span class="badge">Soon</span></div>
+                        <div class="app-desc">Tu página de links personalizada</div>
+                    </div>
+                    <span class="app-arrow">→</span>
+                </a>
+            </li>
+            <li class="app-item">
+                <a href="#" class="app-link">
+                    <span class="app-icon">🧾</span>
+                    <div class="app-info">
+                        <div class="app-name">Invoice Generator <span class="badge">Soon</span></div>
+                        <div class="app-desc">Generador de facturas PDF</div>
+                    </div>
+                    <span class="app-arrow">→</span>
+                </a>
+            </li>
+            <li class="app-item">
+                <a href="#" class="app-link">
+                    <span class="app-icon">🖼️</span>
+                    <div class="app-info">
+                        <div class="app-name">Background Remover <span class="badge">Soon</span></div>
+                        <div class="app-desc">Quitar fondos de imágenes con IA</div>
+                    </div>
+                    <span class="app-arrow">→</span>
+                </a>
+            </li>
+        </ul>
+
+        <p class="footer">Made with ❤️ in Argentina</p>
+    </div>
+</body>
+</html>
