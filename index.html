@@ -43,7 +43,7 @@
             overflow: hidden;
             transition: transform 0.2s, background 0.2s;
         }
-        .app-item:hover {
+        .app-item.live:hover {
             transform: translateX(5px);
             background: rgba(255,255,255,0.1);
         }
@@ -53,6 +53,9 @@
             padding: 16px 20px;
             text-decoration: none;
             color: #fff;
+        }
+        .app-item.coming-soon .app-link {
+            cursor: default;
         }
         .app-icon {
             font-size: 1.5rem;
@@ -65,14 +68,20 @@
         .app-desc { color: #888; font-size: 0.85rem; margin-top: 2px; }
         .app-arrow { color: #888; font-size: 1.2rem; }
         .badge {
-            background: #4ade80;
-            color: #000;
             font-size: 0.65rem;
             padding: 2px 6px;
             border-radius: 4px;
             margin-left: 8px;
             text-transform: uppercase;
             font-weight: 600;
+        }
+        .badge.live {
+            background: #4ade80;
+            color: #000;
+        }
+        .badge.soon {
+            background: #888;
+            color: #fff;
         }
         .footer {
             text-align: center;
@@ -87,81 +96,67 @@
         <h1>🚀 Nuestras Apps</h1>
         <p class="subtitle">Apps y herramientas que estamos construyendo</p>
 
-        <div class="section-title">📱 Apps Móviles (Web Demo)</div>
+        <div class="section-title">🌐 Web Apps</div>
         <ul class="app-list">
-            <li class="app-item">
-                <a href="https://nico-sanchez.github.io/nico-apps-anotador/" class="app-link" target="_blank">
-                    <span class="app-icon">🎴</span>
+            <li class="app-item live">
+                <a href="https://invoice-generator-eight-rho.vercel.app" class="app-link" target="_blank">
+                    <span class="app-icon">🧾</span>
                     <div class="app-info">
-                        <div class="app-name">Anotador de Juegos</div>
-                        <div class="app-desc">Truco, Chinchón, Generala, Escoba, UNO y más</div>
+                        <div class="app-name">Invoice Generator <span class="badge live">Live</span></div>
+                        <div class="app-desc">Generador de facturas PDF</div>
                     </div>
                     <span class="app-arrow">→</span>
                 </a>
             </li>
-            <li class="app-item">
-                <a href="https://nico-sanchez.github.io/nico-apps-pdf-tools/" class="app-link" target="_blank">
-                    <span class="app-icon">📄</span>
+            <li class="app-item live">
+                <a href="https://thumbnail-maker-gilt.vercel.app" class="app-link" target="_blank">
+                    <span class="app-icon">🖼️</span>
                     <div class="app-info">
-                        <div class="app-name">PDF Tools</div>
-                        <div class="app-desc">Unir, dividir, comprimir PDFs</div>
-                    </div>
-                    <span class="app-arrow">→</span>
-                </a>
-            </li>
-            <li class="app-item">
-                <a href="https://nico-sanchez.github.io/nico-apps-galaxy-td/" class="app-link" target="_blank">
-                    <span class="app-icon">🚀</span>
-                    <div class="app-info">
-                        <div class="app-name">Galaxy TD</div>
-                        <div class="app-desc">Tower Defense espacial</div>
-                    </div>
-                    <span class="app-arrow">→</span>
-                </a>
-            </li>
-            <li class="app-item">
-                <a href="https://nico-sanchez.github.io/nico-apps-promiedos/" class="app-link" target="_blank">
-                    <span class="app-icon">⚽</span>
-                    <div class="app-info">
-                        <div class="app-name">Promiedos</div>
-                        <div class="app-desc">Promedios de fútbol argentino</div>
-                    </div>
-                    <span class="app-arrow">→</span>
-                </a>
-            </li>
-            <li class="app-item">
-                <a href="https://nico-sanchez.github.io/nico-apps-dating/" class="app-link" target="_blank">
-                    <span class="app-icon">💕</span>
-                    <div class="app-info">
-                        <div class="app-name">Spark</div>
-                        <div class="app-desc">Dating app</div>
+                        <div class="app-name">Thumbnail Maker <span class="badge live">Live</span></div>
+                        <div class="app-desc">Crear thumbnails para YouTube</div>
                     </div>
                     <span class="app-arrow">→</span>
                 </a>
             </li>
         </ul>
 
-        <div class="section-title">🌐 Web Apps</div>
+        <div class="section-title">📱 Apps Móviles (Próximamente)</div>
         <ul class="app-list">
-            <li class="app-item">
-                <a href="https://invoice-generator-eight-rho.vercel.app" class="app-link" target="_blank">
-                    <span class="app-icon">🧾</span>
+            <li class="app-item coming-soon">
+                <div class="app-link">
+                    <span class="app-icon">📄</span>
                     <div class="app-info">
-                        <div class="app-name">Invoice Generator <span class="badge">Live</span></div>
-                        <div class="app-desc">Generador de facturas PDF</div>
+                        <div class="app-name">PDF Tools <span class="badge soon">Play Store Soon</span></div>
+                        <div class="app-desc">Unir, dividir, comprimir PDFs</div>
                     </div>
-                    <span class="app-arrow">→</span>
-                </a>
+                </div>
             </li>
-            <li class="app-item">
-                <a href="https://thumbnail-maker-gilt.vercel.app" class="app-link" target="_blank">
-                    <span class="app-icon">🖼️</span>
+            <li class="app-item coming-soon">
+                <div class="app-link">
+                    <span class="app-icon">🎴</span>
                     <div class="app-info">
-                        <div class="app-name">Thumbnail Maker <span class="badge">Live</span></div>
-                        <div class="app-desc">Crear thumbnails para YouTube</div>
+                        <div class="app-name">Anotador de Juegos <span class="badge soon">Play Store Soon</span></div>
+                        <div class="app-desc">Truco, Chinchón, Generala, UNO y más</div>
                     </div>
-                    <span class="app-arrow">→</span>
-                </a>
+                </div>
+            </li>
+            <li class="app-item coming-soon">
+                <div class="app-link">
+                    <span class="app-icon">✅</span>
+                    <div class="app-info">
+                        <div class="app-name">Habit Tracker Pro <span class="badge soon">Play Store Soon</span></div>
+                        <div class="app-desc">Seguimiento de hábitos diarios</div>
+                    </div>
+                </div>
+            </li>
+            <li class="app-item coming-soon">
+                <div class="app-link">
+                    <span class="app-icon">🚀</span>
+                    <div class="app-info">
+                        <div class="app-name">Galaxy TD <span class="badge soon">Play Store Soon</span></div>
+                        <div class="app-desc">Tower Defense espacial</div>
+                    </div>
+                </div>
             </li>
         </ul>
 
