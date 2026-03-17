@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nuestras Apps</title>
+    <title>NS Studio - Apps & Herramientas</title>
+    <meta name="description" content="Apps y herramientas gratuitas: facturas, thumbnails, PDF tools, juegos y más. Hechas en Argentina.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -65,14 +67,16 @@
         .app-desc { color: #888; font-size: 0.85rem; margin-top: 2px; }
         .app-arrow { color: #888; font-size: 1.2rem; }
         .badge {
-            background: #ff6b6b;
-            color: #fff;
             font-size: 0.65rem;
             padding: 2px 6px;
             border-radius: 4px;
             margin-left: 8px;
             text-transform: uppercase;
+            font-weight: 600;
         }
+        .badge-live { background: #00c853; color: #fff; }
+        .badge-soon { background: #ff6b6b; color: #fff; }
+        .badge-new { background: #feca57; color: #1a1a2e; }
         .footer {
             text-align: center;
             margin-top: 50px;
@@ -83,8 +87,62 @@
 </head>
 <body>
     <div class="container">
-        <h1>🚀 Nuestras Apps</h1>
-        <p class="subtitle">Apps y herramientas que estamos construyendo</p>
+        <h1>🚀 NS Studio</h1>
+        <p class="subtitle">Apps y herramientas gratuitas</p>
+
+        <div class="section-title">🌐 Web Apps</div>
+        <ul class="app-list">
+            <li class="app-item">
+                <a href="https://invoice-generator-delta-eight.vercel.app" class="app-link" target="_blank">
+                    <span class="app-icon">🧾</span>
+                    <div class="app-info">
+                        <div class="app-name">FacturaYa <span class="badge badge-live">Live</span></div>
+                        <div class="app-desc">Generador de facturas, recibos y notas de crédito. PDF gratis.</div>
+                    </div>
+                    <span class="app-arrow">→</span>
+                </a>
+            </li>
+            <li class="app-item">
+                <a href="https://thumbnail-maker-mu.vercel.app" class="app-link" target="_blank">
+                    <span class="app-icon">🎬</span>
+                    <div class="app-info">
+                        <div class="app-name">ThumbMaker <span class="badge badge-live">Live</span></div>
+                        <div class="app-desc">Thumbnails para YouTube. Templates, editor y descarga gratis.</div>
+                    </div>
+                    <span class="app-arrow">→</span>
+                </a>
+            </li>
+            <li class="app-item">
+                <a href="#" class="app-link">
+                    <span class="app-icon">🔗</span>
+                    <div class="app-info">
+                        <div class="app-name">Link in Bio <span class="badge badge-soon">Soon</span></div>
+                        <div class="app-desc">Tu página de links personalizada</div>
+                    </div>
+                    <span class="app-arrow">→</span>
+                </a>
+            </li>
+            <li class="app-item">
+                <a href="#" class="app-link">
+                    <span class="app-icon">⭐</span>
+                    <div class="app-info">
+                        <div class="app-name">Testimonial Collector <span class="badge badge-soon">Soon</span></div>
+                        <div class="app-desc">Recopilar y mostrar testimonios de clientes</div>
+                    </div>
+                    <span class="app-arrow">→</span>
+                </a>
+            </li>
+            <li class="app-item">
+                <a href="#" class="app-link">
+                    <span class="app-icon">🖼️</span>
+                    <div class="app-info">
+                        <div class="app-name">Background Remover <span class="badge badge-soon">Soon</span></div>
+                        <div class="app-desc">Quitar fondos de imágenes con IA</div>
+                    </div>
+                    <span class="app-arrow">→</span>
+                </a>
+            </li>
+        </ul>
 
         <div class="section-title">📱 Apps Móviles</div>
         <ul class="app-list">
@@ -109,6 +167,16 @@
                 </a>
             </li>
             <li class="app-item">
+                <a href="#" class="app-link">
+                    <span class="app-icon">✅</span>
+                    <div class="app-info">
+                        <div class="app-name">Habit Tracker Pro <span class="badge badge-soon">Soon</span></div>
+                        <div class="app-desc">Seguimiento de hábitos diarios con estadísticas</div>
+                    </div>
+                    <span class="app-arrow">→</span>
+                </a>
+            </li>
+            <li class="app-item">
                 <a href="https://nico-sanchez.github.io/nico-apps-galaxy-td/" class="app-link" target="_blank">
                     <span class="app-icon">🚀</span>
                     <div class="app-info">
@@ -128,53 +196,9 @@
                     <span class="app-arrow">→</span>
                 </a>
             </li>
-            <li class="app-item">
-                <a href="https://nico-sanchez.github.io/nico-apps-dating/" class="app-link" target="_blank">
-                    <span class="app-icon">💕</span>
-                    <div class="app-info">
-                        <div class="app-name">Spark</div>
-                        <div class="app-desc">Dating app</div>
-                    </div>
-                    <span class="app-arrow">→</span>
-                </a>
-            </li>
         </ul>
 
-        <div class="section-title">🌐 Web Apps (Próximamente)</div>
-        <ul class="app-list">
-            <li class="app-item">
-                <a href="#" class="app-link">
-                    <span class="app-icon">🔗</span>
-                    <div class="app-info">
-                        <div class="app-name">Link in Bio <span class="badge">Soon</span></div>
-                        <div class="app-desc">Tu página de links personalizada</div>
-                    </div>
-                    <span class="app-arrow">→</span>
-                </a>
-            </li>
-            <li class="app-item">
-                <a href="#" class="app-link">
-                    <span class="app-icon">🧾</span>
-                    <div class="app-info">
-                        <div class="app-name">Invoice Generator <span class="badge">Soon</span></div>
-                        <div class="app-desc">Generador de facturas PDF</div>
-                    </div>
-                    <span class="app-arrow">→</span>
-                </a>
-            </li>
-            <li class="app-item">
-                <a href="#" class="app-link">
-                    <span class="app-icon">🖼️</span>
-                    <div class="app-info">
-                        <div class="app-name">Background Remover <span class="badge">Soon</span></div>
-                        <div class="app-desc">Quitar fondos de imágenes con IA</div>
-                    </div>
-                    <span class="app-arrow">→</span>
-                </a>
-            </li>
-        </ul>
-
-        <p class="footer">Made with ❤️ in Argentina</p>
+        <p class="footer">Made with ❤️ in Argentina · © 2026 NS Studio</p>
     </div>
 </body>
 </html>
